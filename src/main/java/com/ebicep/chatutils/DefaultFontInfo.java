@@ -1,3 +1,5 @@
+package com.ebicep.chatutils;
+
 public enum DefaultFontInfo {
 
     A('A', 5),

@@ -1,3 +1,5 @@
+package com.ebicep.chatutils;
+
 import net.md_5.bungee.api.chat.ComponentBuilder;
 import net.md_5.bungee.api.chat.TextComponent;
 import net.minecraft.server.v1_8_R3.NBTTagCompound;
@@ -77,7 +79,7 @@ public class ChatUtils {
         boolean isBold = false;
 
         for (char c : message.toCharArray()) {
-            if (c == '§') {
+            if (Character.toString(c).equals("§")) {
                 previousCode = true;
             } else if (previousCode) {
                 previousCode = false;
@@ -113,7 +115,7 @@ public class ChatUtils {
         boolean isBold = false;
 
         for (char c : message.toCharArray()) {
-            if (c == '§') {
+            if (Character.toString(c).equals("§")) {
                 previousCode = true;
             } else if (previousCode) {
                 previousCode = false;
